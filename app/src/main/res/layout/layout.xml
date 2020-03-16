@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context=".Naughts_and_crosses">
+
+    //DONE BY BOTH TARAN AND MANEEL
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/text_view_p1"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:freezesText="true"
+
+            android:text="Player 1: 0"
+
+            android:textSize="30sp" />
+
+        <TextView
+
+            android:id="@+id/text_view_p2"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/text_view_p1"
+
+            android:text="Player 2: 0"
+
+            android:textSize="30sp"
+
+            android:freezesText="true"/>
+
+        <Button
+
+            android:id="@+id/button_reset"
+
+            android:layout_width="134dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/text_view_p2"
+
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_marginStart="97dp"
+
+            android:layout_marginLeft="97dp"
+
+            android:layout_marginTop="18dp"
+
+            android:layout_marginEnd="41dp"
+
+            android:layout_marginRight="41dp"
+
+            android:layout_marginBottom="16dp"
+
+            android:layout_toEndOf="@+id/text_view_p2"
+
+            android:layout_toRightOf="@+id/text_view_p2"
+
+            android:text="reset" />
+
+    </RelativeLayout> //commit
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+
+        android:layout_weight="1">
+
+        <Button
+
+            android:id="@+id/button_00"
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+
+            android:textSize= "60sp"
+
+            android:freezesText="true"
+
+            />
+
+        <Button
+
+            android:id="@+id/button_01"
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+
+            android:textSize= "60sp"
+
+            android:freezesText="true"/>
+
+        <Button
+
+            android:id="@+id/button_02"
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+
+            android:textSize= "60sp"
+
+            android:freezesText="true"/>
+
+    </LinearLayout> //commit
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+
+        android:layout_weight="1">
+
+        <Button
+
+            android:id="@+id/button_10"
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+
+            android:textSize= "60sp"
+
+            android:freezesText="true"/>
+
+        <Button
+
+            android:id="@+id/button_11"
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+
+            android:textSize= "60sp"
+
+            android:freezesText="true"/>
+
+        <Button
+
+            android:id="@+id/button_12"
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+
+            android:textSize= "60sp"
+
+            android:freezesText="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+
+        android:layout_weight="1">
+
+        <Button
+
+            android:id="@+id/button_20"
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+
+            android:textSize= "60sp"
+
+            android:freezesText="true"/>
+
+        <Button
+
+            android:id="@+id/button_21"
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+
+            android:textSize= "60sp"
+
+            android:freezesText="true"/>
+
+        <Button
+
+            android:id="@+id/button_22"
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+
+            android:textSize= "60sp"
+
+            android:freezesText="true"/>
+
+    </LinearLayout> //commit
+
+    // above we created a 2D array, the Id's are numbers because in a 2D array the first index is always 0 not 1.
+
+    //The top left tile will be 0,0 and so on, which represent the playing field for users interact
+
+</LinearLayout>
